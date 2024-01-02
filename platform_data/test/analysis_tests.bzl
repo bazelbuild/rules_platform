@@ -30,7 +30,6 @@ def _platform_data_test_impl(ctx):
     target_under_test = analysistest.target_under_test(env)
     transitive_target_platforms = target_under_test[TransitivePlatformInfo]
 
-    print("transitive_target_platforms: " + str(transitive_target_platforms))
     asserts.equals(
         env,
         ctx.attr.expected_platform,
