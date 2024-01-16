@@ -1,3 +1,5 @@
 ---
 build_targets: &build_targets
   - "//..."
+test_targets:
+  - "//platform_data/test/..."
