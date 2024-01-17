@@ -29,3 +29,4 @@ py_binary(
 )
 ```
 Regardless of what platform the top-level `:flasher` binary is built for, the `:foo_embedded` target will be built for `//my/new:platform`.
+
