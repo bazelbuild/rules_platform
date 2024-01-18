@@ -1,4 +1,6 @@
-"""TODO(aranguyen): Write module docstring."""
+"""
+platform_data_test is an analysistest rule that takes a target_under_test (e.g platform_data target) and a value for expected_platform. The test rule implementation make asserts against the transitive target platforms to make sure that --platform is set properly by the transition. 
+"""
 
 load("@bazel_skylib/lib:unittest.bzl", "analysistest", "asserts")
 
