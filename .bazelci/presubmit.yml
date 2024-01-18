@@ -1,13 +1,8 @@
 ---
-build_targets: &build_targets
-  - "//..."
-test_targets:
-  - "//platform_data/test/..."
-
-buildifier: latest
 
 tasks:
   ubuntu2004:
-    build_targets: *build_targets
+    build_targets:
+      - "//..."
     test_targets:
       - "//platform_data/test/..."
