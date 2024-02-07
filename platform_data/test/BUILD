@@ -1,4 +1,4 @@
-load("@rules_platform//platform_data:defs.bzl", "platform_data")
+load("//platform_data:defs.bzl", "platform_data")
 load(":analysis_tests.bzl", "platform_data_test", "write_target_platform_rule_test")
 
 platform_data_test(
