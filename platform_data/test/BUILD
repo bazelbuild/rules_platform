@@ -3,7 +3,7 @@ load(":analysis_tests.bzl", "platform_data_test", "write_target_platform_rule_te
 
 platform_data_test(
     name = "platform_data_test",
-    expected_platform = "//third_party/bazel_platforms/experimental/platform_data/test:test_platform",
+    expected_platform = "@@//platform_data/test:test_platform",
     target_under_test = ":foo_embedded",
 )
 
