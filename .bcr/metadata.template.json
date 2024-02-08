@@ -1,12 +1,6 @@
 {
   "homepage": "https://github.com/bazelbuild/rules_platform",
-  "maintainers": [
-    {
-      "name": "Ara Nguyen",
-      "email": "aranguyen@google.com",
-      "github": "aranguyen"
-    }
-  ],
+  "maintainers": [],
   "repository": [
     "github:bazelbuild/rules_platform"
   ],
