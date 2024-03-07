@@ -1,0 +1,23 @@
+load("@rules_pkg//pkg:tar.bzl", "pkg_tar")
+load("@rules_pkg//pkg/releasing:defs.bzl", "print_rel_notes")
+
+package(
+    default_visibility = ["//visibility:private"],
+)
+
+# Build the artifact to put on the github release page.
+pkg_tar(
+    name = "rules_platform-0.1.0", # update the version number here per release
+    extension = "tar.gz",
+    # Make it owned by root so it does not have the uid of the CI robot.
+    owner = "0.0",
+    package_dir = ".",
+    strip_prefix = ".",
+)
+
+print_rel_notes(
+    name = "relnotes",
+    outs = ["relnotes.txt"],
+    repo = "rules_platform",
+    version = "0.1.0",
+)
