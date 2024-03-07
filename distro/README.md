@@ -1,4 +1,4 @@
-# Releasing rules_java
+# Releasing rules_platform
 
 1. Update version in distro/BUILD.bazel,
 2. Build the release running `bazel build //distro:rules_platform-{version}`
