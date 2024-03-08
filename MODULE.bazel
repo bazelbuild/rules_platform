@@ -5,6 +5,7 @@
 
 module(
     name = "rules_platform",
+    version = "0.1.0",
 )
 
 bazel_dep(name = "bazel_skylib", version = "1.5.0")
