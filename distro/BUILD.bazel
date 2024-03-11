@@ -9,6 +9,7 @@ package(
 pkg_tar(
     name = "rules_platform-0.1.0", # update the version number here per release
     extension = "tar.gz",
+    srcs = ["//:distribution"],
     # Make it owned by root so it does not have the uid of the CI robot.
     owner = "0.0",
     package_dir = ".",
