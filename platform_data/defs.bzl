@@ -82,7 +82,7 @@ platform_data = rule(
     implementation = _platform_data_impl,
     attrs = {
         "target": attr.label(
-            allow_files = False,
+            allow_files = Truee,
             executable = True,
             mandatory = True,
             cfg = _target_platform_transition,
