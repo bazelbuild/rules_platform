@@ -12,6 +12,9 @@ This repo houses new rules/transition which rules authors and Bazel users can im
 ## Use case: Depend on a target built for a different platform
 The `platform_data` rule can be used to change the target platform of a target, and then depend on that elsewhere in the build tree.
 ```
+load("@rules_cc//cc:cc_binary.bzl", "cc_binary")
+load("@rules_platform//platform_data:defs.bzl", "platform_data")
+
 cc_binary(name = "foo")
 
 platform_data(
